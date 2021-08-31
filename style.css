@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f6f9ff;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #434343;
+}
+
+.cards {
+    display: flex;
+
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-color: white;
+    border-radius: 0.5rem;
+    
+    max-height: 256px;
+    padding: 1rem 1.5rem;
+
+    margin-left: 1rem;
+}
+
+.card:first-child{
+    margin-left: 0;
+}
+
+.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 0.75rem;
+    border: 0;
+    cursor: pointer;
+
+    font-size: 80%;
+    font-weight: 500;
+
+    color: white;
+}
+
+.card.contact button {
+    background: linear-gradient(to right, #9f66ff, #dfcbff);
+}
+
+.card.shop button {
+    background: linear-gradient(to right, #3e8aff, #bbdeff);
+}
+
+.card.about button {
+    background: linear-gradient(to right, #fe5f8f, #ffc7d9);
+}
+
+.card.contact {
+    box-shadow: 20px 20px 50px -30px #dbc4ff;
+}
+
+.card.shop {
+    box-shadow: 20px 20px 50px -30px #afd6ff;
+}
+
+.card.contact {
+    box-shadow: 20px 20px 50px -30px #ffc1d5;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+}
+
+.icon img {
+    width: 100%;
+}
