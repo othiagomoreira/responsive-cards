@@ -7,7 +7,7 @@
 
 body {
     background-color: #f6f9ff;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 
     display: flex;
@@ -32,7 +32,7 @@ body {
     background-color: white;
     border-radius: 0.5rem;
     
-    max-height: 256px;
+    max-height: 300px;
     padding: 1rem 1.5rem;
 
     margin-left: 1rem;
@@ -40,6 +40,23 @@ body {
 
 .card:first-child{
     margin-left: 0;
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 1rem 0;
+
+
+}
+
+.card p {
+    font-weight: 300;
+    font-size: 80%;
+
+    max-width: 240px;
+    margin-bottom: 1rem;
+
 }
 
 .card button {
@@ -79,6 +96,7 @@ body {
     box-shadow: 20px 20px 50px -30px #ffc1d5;
 }
 
+
 .icon {
     width: 64px;
     height: 64px;
@@ -86,4 +104,22 @@ body {
 
 .icon img {
     width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .cards {
+        flex-direction: column;
+        height: 100%;
+        padding: 1.5rem;
+        
+    }
+
+    .card {
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .card:last-child {
+        margin-bottom: 0;
+    }
 }
